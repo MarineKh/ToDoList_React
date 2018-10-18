@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-// import EditIcon from '@material-ui/icons/Edit';
-// import DeleteIcon from '@material-ui/icons/Delete';
 import { FaPen, FaTrashAlt } from 'react-icons/fa';
 import EditItem from './EditItem'
 import New from './StatusButtons/New'
