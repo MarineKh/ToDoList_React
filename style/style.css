@@ -57,7 +57,8 @@ li {
     background-color: #DCEDC8;
     font-weight: bold;
     font-size: 16px;
-
+    text-transform: capitalize;
+    
     display: flex;
     border-radius: 8px;
     padding: 10px 55px 10px 10px;

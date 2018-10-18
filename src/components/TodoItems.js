@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import EditIcon from '@material-ui/icons/Edit';
-import DeleteIcon from '@material-ui/icons/Delete';
+// import EditIcon from '@material-ui/icons/Edit';
+// import DeleteIcon from '@material-ui/icons/Delete';
+import { FaPen, FaTrashAlt } from 'react-icons/fa';
 import EditItem from './EditItem'
 import New from './StatusButtons/New'
 import Done from './StatusButtons/Done'
@@ -61,8 +62,8 @@ export default class TodoItem extends Component {
                 {this.props.item.text}
                 {this.state.isHovering &&
                     <div className="td--buttons-wrapper">
-                        <button className="td--removeItem" onClick={(e) => this.removeItem(this.props.id)}><DeleteIcon /></button>
-                        <button className="td--editItem" onClick={(e) => this.editItem(this.props.id)}><EditIcon /></button>
+                        <button className="td--removeItem" onClick={(e) => this.removeItem(this.props.id)}><FaTrashAlt /></button>
+                        <button className="td--editItem" onClick={(e) => this.editItem(this.props.id)}><FaPen /></button>
                     </div>
                 }
                 {renderStatusButton}
